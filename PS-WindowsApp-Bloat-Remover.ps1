@@ -11,4 +11,4 @@ $Acl.SetAccessRule($Ar)
 Set-Acl $location $Acl
 
 #Remove All Files
-Get-ChildItem -Path $location -Include *.* -File -Recurse | foreach { $_.
+Get-ChildItem -Path $location -Include *.* -File -Recurse | foreach { $_.Delete()}
